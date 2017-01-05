@@ -4,9 +4,18 @@
   "description": "website for HGX Tutoring",
   "main": "gulpfile.js",
   "dependencies": {
+    "browser-sync": "^2.18.5",
+    "express": "^4.14.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-install": "^0.6.0",
+    "gulp-jst-concat": "0.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.0.0",
+    "merge-stream": "^1.0.1"
+  },
+  "devDependencies": {
     "gulp-install": "^0.6.0"
   },
-  "devDependencies": {},
   "scripts": {
     "start": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
