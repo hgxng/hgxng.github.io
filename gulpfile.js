@@ -23,7 +23,7 @@ gulp.task("copy", function () {
   var fonts = gulp.src(["src/assets/fonts/**/"]).pipe(gulp.dest("build/fonts"));
   var js = gulp.src(["src/assets/js/**/"]).pipe(gulp.dest("build/js"));
   var img = gulp.src(["src/assets/img/**/"]).pipe(gulp.dest("build/img"));
-  var css = gulp.src(["src/assets/scss/**/"]).pipe(gulp.dest("build/css"));
+  var css = gulp.src(["src/assets/scss/index.scss/"]).pipe(gulp.dest("build/css"));
   var merged = merge(html, fonts, css);
   merged.add(js);
   merged.add(img);

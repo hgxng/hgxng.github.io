@@ -6,6 +6,7 @@
   "dependencies": {
     "browser-sync": "^2.18.5",
     "express": "^4.14.0",
+    "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
     "gulp-install": "^0.6.0",
     "gulp-jst-concat": "0.0.1",
