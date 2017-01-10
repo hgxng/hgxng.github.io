@@ -2728,14 +2728,16 @@ select[multiple].input-lg {
   height: 100%;
   background: #888888; }
 
-#header-image {
-  background-image: url("../img/banner-22.jpeg");
+#page {
+  background-image: url("../img/underConstruction.png");
   width: 100%;
-  height: 750px;
+  height: 100%;
   left: 0;
   position: absolute;
   background-repeat: no-repeat;
-  background-size: 100%; }
+  background-size: 70%;
+  background-color: white;
+  background-position: center center; }
 
 .navbar {
   position: relative; }
