@@ -2728,6 +2728,42 @@ select[multiple].input-lg {
   height: 100%;
   background: #888888; }
 
+@font-face {
+  font-family: 'Avenir Next UltraLight';
+  src: url("../fonts/AvenirNext-UltraLight.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Avenir Next Regular';
+  src: url("../fonts/AvenirNext-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Avenir Next Medium';
+  src: url("../fonts/AvenirNextLTPro-Medium.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Avenir Next Bold';
+  src: url("../fonts/AvenirNextLTPro-Bold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Avenir Next Demi';
+  src: url("../fonts/AvenirNextLTPro-Demi.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Avenir Next Heavy';
+  src: url("../fonts/AvenirNextLTPro-Heavy.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal; }
+
 #header-image {
   background-image: url("../img/banner-22.jpeg");
   width: 100%;
@@ -2737,5 +2773,35 @@ select[multiple].input-lg {
   background-repeat: no-repeat;
   background-size: 100%; }
 
+#header-overlay {
+  width: 100%;
+  height: 750px;
+  position: absolute;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4); }
+
 .navbar {
   position: relative; }
+
+.navbar {
+  height: 132px;
+  padding-top: 32px;
+  display: flex;
+  align-items: center; }
+  .navbar .nav {
+    width: 100%; }
+    .navbar .nav .row {
+      margin: 0;
+      width: 100%; }
+      .navbar .nav .row .nav-item.element {
+        font-family: "Avenir Next Regular";
+        color: white;
+        text-align: center;
+        font-size: 25px;
+        position: relative; }
+        .navbar .nav .row .nav-item.element:hover {
+          text-decoration: none; }
+      .navbar .nav .row #logo {
+        margin-top: -12px; }
+        .navbar .nav .row #logo img {
+          width: 370px; }

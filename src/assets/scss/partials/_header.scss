@@ -1,0 +1,30 @@
+.navbar {
+  height: 132px;
+  padding-top: 32px;
+  display: flex;
+  align-items: center;
+  .nav {
+    width: 100%;
+    .row {
+      margin: 0; 
+      width: 100%; 
+      .nav-item.element {
+        font-family: "Avenir Next Regular";
+        color: white;
+        text-align: center;
+        font-size: 25px;
+        position: relative;
+//        margin: 0 120px;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+      #logo {
+        margin-top: -12px;
+        img {
+          width: 370px;
+        }
+      }
+    }
+  }
+}
