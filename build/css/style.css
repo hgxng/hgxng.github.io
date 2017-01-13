@@ -2726,7 +2726,8 @@ select[multiple].input-lg {
 #page {
   width: 100%;
   height: 100%;
-  background: #888888; }
+  background: white;
+  position: relative; }
 
 @font-face {
   font-family: 'Avenir Next UltraLight';
@@ -2765,18 +2766,19 @@ select[multiple].input-lg {
   font-style: normal; }
 
 #header-image {
-  background-image: url("../img/banner-22.jpeg");
   width: 100%;
   height: 750px;
   left: 0;
   position: absolute;
   background-repeat: no-repeat;
+  background: rgba(0, 0, 0, 0.9);
   background-size: 100%; }
 
 #cta {
   position: relative; }
   #cta div {
     margin-top: 10%;
+    padding-top: 80px;
     text-align: center;
     border: 5px solid white;
     height: 300px; }
@@ -2785,6 +2787,15 @@ select[multiple].input-lg {
       font-size: 36px;
       font-family: "Avenir Next Medium"; }
 
+#scrollButton {
+  background: red;
+  width: 80px;
+  height: 70px;
+  position: relative;
+  margin: 0 auto;
+  top: 300px; }
+
+/*Down pointing*/
 .navbar {
   position: relative; }
 
