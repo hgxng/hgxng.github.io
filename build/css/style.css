@@ -2765,6 +2765,12 @@ select[multiple].input-lg {
   font-weight: normal;
   font-style: normal; }
 
+.pad--0 {
+  padding: 0; }
+
+.marg--0 {
+  margin: 0; }
+
 #header-image {
   width: 100%;
   height: 750px;
@@ -2796,14 +2802,23 @@ select[multiple].input-lg {
   top: 300px; }
 
 /*Down pointing*/
-.navbar {
-  position: relative; }
+#welcome {
+  width: 100%;
+  position: relative;
+  height: 500px;
+  border: 1px solid green;
+  margin: 0;
+  margin-top: 40em; }
+  #welcome .content {
+    padding: 0 150px; }
 
 .navbar {
   height: 132px;
   padding-top: 32px;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  position: fixed;
+  width: 100%; }
   .navbar .nav {
     width: 100%; }
     .navbar .nav .row {
@@ -2821,3 +2836,10 @@ select[multiple].input-lg {
         margin-top: -12px; }
         .navbar .nav .row #logo img {
           width: 370px; }
+
+footer {
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  height: 32px;
+  background: #999; }
