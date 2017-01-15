@@ -2805,12 +2805,19 @@ select[multiple].input-lg {
 #welcome {
   width: 100%;
   position: relative;
-  height: 500px;
+  height: 50em;
   border: 1px solid green;
   margin: 0;
   margin-top: 40em; }
   #welcome .content {
-    padding: 0 150px; }
+    padding: 0 150px;
+    margin: 70px; }
+    #welcome .content h5 {
+      font-size: 22px;
+      font-family: "Avenir Next Demi"; }
+    #welcome .content p {
+      font-size: 19px;
+      font-family: "Avenir Next Regular"; }
 
 .navbar {
   height: 132px;
