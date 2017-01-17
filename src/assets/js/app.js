@@ -1,10 +1,15 @@
+
 $(document).ready(function () {
-  $(function () {
-    $("#scrollButton a").on('click', function (e) {
-      e.preventDefault();
-      scrollPage(this);
-      animateNavbar();
-    });
+  $('#fullpage').fullpage({
+    fixedElements: '#header, footer',
+  });
+
+  $("#scrollButton").on('click', function (e) {
+    //    e.preventDefault();
+    console.log("scrolling")
+    $.fn.fullpage.moveSectionDown();
+    //      scrollPage(this);
+    //      animateNavbar();
   });
 })
 

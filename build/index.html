@@ -5,43 +5,62 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> HGX Tutoring </title>
+  <!--  <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />-->
   <link rel="stylesheet" href="css/style.css"> </head>
 
 <body>
-  <div id="page" class="container pad--0">
-    <div id="header-image" class="overlay"></div>
-    <div id="header-overlay"></div>
-    <nav class="navbar navbar-light bg-faded">
+  <div id="fullpage">
+    <nav id="header" class="navbar navbar-light bg-faded">
       <div class="nav navbar-nav">
         <div class="row marg--0">
           <a id="logo" class="col-sm-3 nav-item nav-link pull-left" href="#"><img src="img/logo.png"></a> <a class="col-sm-3 nav-item element nav-link active" href="#">About Us <span class="sr-only">(current)</span></a> <a class="col-sm-3 nav-item element nav-link" href="#">Meet The Team</a> <a class="col-sm-3 nav-item element nav-link" href="#">Contact Us</a> </div>
       </div>
-    </nav>
-    <div id="cta" class="row marg--0">
-      <div class="col-sm-6 col-sm-offset-3">
-        <h4>HELPING YOUNG ADULTS <br> RETAIN KNOWLEDGE <br> BEYOND THE CLASSROOM </h4> </div>
+    </nav> <a id="scrollButton"> Scroll </a>
+    <div id="landing" class="section active"> Banner image section </div>
+    <div class="section">
+      <div class="slide"> Home Page </div>
+      <div class="slide"> About Us </div>
+      <div class="slide"> Meet The Team </div>
+      <div class="slide"> Contact Us </div>
     </div>
-    <div id="scrollButton"> <a href=".content"><span></span>Scroll</a> </div>
-    <div id="welcome" class="row marg--0">
-      <div class="content">
-        <h5>Welcome To HGX Tutoring! </h5>
-        <p> The objective of HGX is to provide private tutoring services that are a cut above the typical. Tutors are chosen for their ability to do more than teach subjects, but present meaningful applications for the material being taught. </p>
-        <p> HGX tutors have a hands on experience in creating and implementing individual-based tuition programs. At the heart of everything we do is a dedication by the founders to a unique form of community service – bringing the best of the older generation to share their skills and expertise with the younger ones.</p>
-      </div>
-      <div class="content">
-        <h5>
-          Becoming A HGX Client Is An Easy 3 Step Process: 
-        </h5>
-        <p> You fill the form here (prospective parent or student) </p>
-        <p> An interview is arranged </p>
-        <p> Lessons can begin almost immediately, subject to availability of tutors and successful interview outcome. </p>
-      </div>
-    </div>
-    <footer> proudly nigerian </footer>
+    <div class="section ignore">..</div>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-  <script src="js/app.js"></script>
+  <script type="text/javascript" src="js/bundle.js"></script>
 </body>
 
 </html>
+<!--
+<div id="page" class="container pad--0">
+  <div id="header-image" class="overlay"></div>
+  <div id="header-overlay"></div>
+  <nav class="navbar navbar-light bg-faded">
+    <div class="nav navbar-nav">
+      <div class="row marg--0">
+        <a id="logo" class="col-sm-3 nav-item nav-link pull-left" href="#"><img src="img/logo.png"></a> <a class="col-sm-3 nav-item element nav-link active" href="#">About Us <span class="sr-only">(current)</span></a> <a class="col-sm-3 nav-item element nav-link" href="#">Meet The Team</a> <a class="col-sm-3 nav-item element nav-link" href="#">Contact Us</a> </div>
+    </div>
+  </nav>
+  <div id="cta" class="row marg--0">
+    <div class="col-sm-6 col-sm-offset-3">
+      <h4>HELPING YOUNG ADULTS <br> RETAIN KNOWLEDGE <br> BEYOND THE CLASSROOM </h4> </div>
+  </div>
+  <div id="scrollButton"> <a href=".content"><span></span>Scroll</a> </div>
+  <div id="welcome" class="row marg--0">
+    <div class="content">
+      <h5>Welcome To HGX Tutoring! </h5>
+      <p> The objective of HGX is to provide private tutoring services that are a cut above the typical. Tutors are chosen for their ability to do more than teach subjects, but present meaningful applications for the material being taught. </p>
+      <p> HGX tutors have a hands on experience in creating and implementing individual-based tuition programs. At the heart of everything we do is a dedication by the founders to a unique form of community service – bringing the best of the older generation to share their skills and expertise with the younger ones.</p>
+    </div>
+    <div class="content">
+      <h5>
+          Becoming A HGX Client Is An Easy 3 Step Process: 
+        </h5>
+      <p> You fill the form here (prospective parent or student) </p>
+      <p> An interview is arranged </p>
+      <p> Lessons can begin almost immediately, subject to availability of tutors and successful interview outcome. </p>
+    </div>
+  </div>
+  <footer> proudly nigerian </footer>
+</div>
+-->
