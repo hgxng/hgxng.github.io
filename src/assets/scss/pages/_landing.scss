@@ -1,15 +1,18 @@
 #landing {
-  background: black;
-  
-  #header-image {
-    //  background-image: url("../img/banner-22.jpeg");
-    width: 100%;
-    height: 750px;
-    left: 0;
+  //  background: black;
+  background-image: url("../img/banner-overlay.jpg");
+  width: 100%;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: 110%;
+  background-position: center top;
+  &:after {
+    content: ' ';
     position: absolute;
-    background-repeat: no-repeat;
-    background: rgba( 0, 0, 0, 0.9);
-    background-size: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, .5);
   }
   #cta {
     position: relative;
@@ -27,13 +30,18 @@
     }
   }
   #scrollButton {
-    background: red;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: $font--demi;
+    color: red;
     width: 80px;
-    height: 70px;
-    position: relative;
+    height: 30px;
+    position: absolute;
     margin: 0 auto;
-    top: 300px;
-    z-index: 1;
+    top: 90%;
+    left: 0;
+    right: 0;
+    text-align: center;
   }
   /*Down pointing*/
   //#header-overlay { 
