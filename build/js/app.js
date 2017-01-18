@@ -1,16 +1,21 @@
-
 $(document).ready(function () {
+  // 1. 
+  // instantiating full page js 
+  // setting header and footer as static elements
   $('#fullpage').fullpage({
-    fixedElements: '#header, footer',
-  });
-
+    fixedElements: '#header, footer'
+  , });
+  // --
+  // 2. 
+  // scroll to home page animation trigger
   $("#scrollButton").on('click', function (e) {
-    //    e.preventDefault();
+    e.preventDefault();
     console.log("scrolling")
     $.fn.fullpage.moveSectionDown();
     //      scrollPage(this);
     //      animateNavbar();
   });
+  // -- 
 })
 
 function scrollPage(_this) {

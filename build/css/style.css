@@ -3016,9 +3016,9 @@ html.fp-enabled,
     top: 0;
     background-color: rgba(0, 0, 0, 0.5); }
   #landing #cta {
-    position: relative; }
+    position: relative;
+    margin-top: -10%; }
     #landing #cta div {
-      margin-top: 10%;
       padding-top: 80px;
       text-align: center;
       border: 5px solid white;
@@ -3026,11 +3026,13 @@ html.fp-enabled,
       #landing #cta div h4 {
         color: white;
         font-size: 36px;
-        font-family: "Avenir Next Medium"; }
+        font-family: "Avenir Next Demi";
+        letter-spacing: 1px; }
   #landing #scrollButton {
     letter-spacing: 1px;
     text-transform: uppercase;
     font-family: "Avenir Next Demi";
+    font-size: 15px;
     color: red;
     width: 80px;
     height: 30px;
