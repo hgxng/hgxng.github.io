@@ -1,21 +1,18 @@
 #welcome {
   width: 100%;
   position: relative;
-  height: 50em;
-  border: 1px solid green;
+  height: 100%;
   margin: 0;
-  margin-top: 40em;
-  
+  padding-top: $header-height;
   .content {
-    padding: 0 150px; 
-    margin: 70px; 
+    padding: 0 58px;
+    margin: 70px;
     h5 {
-      font-size: 22px; 
-      font-family: $font--demi;  
+      font-size: 22px;
+      font-family: $font--demi;
     }
-    
     p {
-      font-size: 19px; 
+      font-size: 19px;
       font-family: $font--reg;
     }
   }

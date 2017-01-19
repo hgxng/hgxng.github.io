@@ -3,8 +3,17 @@ $(document).ready(function () {
   // instantiating full page js 
   // setting header and footer as static elements
   $('#fullpage').fullpage({
-    fixedElements: '#header, footer'
-  , });
+    fixedElements: '#header, #footer'
+    , controlArrows: false, //events
+    onLeave: callMe
+      // onLead: function (index, nextIndex, direction) {}
+      //    , afterLoad: function (anchorLink, index) {}
+      //    , afterRender: function () {}
+      //    , afterResize: function () {}
+      //    , afterResponsive: function (isResponsive) {}
+      //    , afterSlideLoad: function (anchorLink, index, slideAnchor, slideIndex) {}
+      //    , onSlideLeave: function (anchorLink, index, slideIndex, direction, nextSlideIndex) {}
+  });
   // --
   // 2. 
   // scroll to home page animation trigger
@@ -28,6 +37,30 @@ function animateNavbar() {
   $(".nav .element").css({
     color: "black"
   })
+}
+
+function callMe(index, nextIndex, direction) {
+  console.log("call me \n", index);
+  console.log("call me \n", nextIndex);
+  console.log("call me \n", direction);
+  if (direction === "down") {
+    $("#header .nav-item.element").animate({
+        "color": "black"
+      }, 1000)
+      // show the footer 
+    $("#footer").animate({
+      "opacity": 1
+    }, 1000)
+  }
+  else if (direction === "up") {
+    $("#header .nav-item.element").animate({
+        "color": "white"
+      }, 350)
+      // hide the footer
+    $("#footer").animate({
+      "opacity": 0
+    }, 350)
+  }
 }
 /*! jQuery UI - v1.9.2 - 2014-03-21
 * http://jqueryui.com

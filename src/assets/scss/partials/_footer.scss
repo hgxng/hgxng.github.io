@@ -1,7 +1,9 @@
 footer {
   width: 100%; 
   position: relative; 
-  bottom: 0; 
-  height: 32px; 
-  background: #999;
+  bottom: $footer-height/2; 
+  height: $footer-height; 
+  background: white;
+  border: 1px solid #999; 
+  opacity: 0;
 }

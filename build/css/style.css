@@ -3046,12 +3046,11 @@ html.fp-enabled,
 #welcome {
   width: 100%;
   position: relative;
-  height: 50em;
-  border: 1px solid green;
+  height: 100%;
   margin: 0;
-  margin-top: 40em; }
+  padding-top: 132px; }
   #welcome .content {
-    padding: 0 150px;
+    padding: 0 58px;
     margin: 70px; }
     #welcome .content h5 {
       font-size: 22px;
@@ -3089,6 +3088,8 @@ html.fp-enabled,
 footer {
   width: 100%;
   position: relative;
-  bottom: 0;
-  height: 32px;
-  background: #999; }
+  bottom: 66px;
+  height: 132px;
+  background: white;
+  border: 1px solid #999;
+  opacity: 0; }
