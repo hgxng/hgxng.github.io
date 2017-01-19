@@ -6,6 +6,8 @@ $(document).ready(function () {
     fixedElements: '#header, #footer', // fixed
     controlArrows: false, //events
     keyboardScrolling: true, // turn off keys
+    anchors: [ 'p0', 'p1', 'p2', 'p3', 'p4'], //
+    menu: '#header', //
     //    onSlideLeave: function (anchorLink, index, slideIndex, direction, nextSlideIndex) {
     //      console.log( "well fuck ", anchorLink)
     //      if (deleteLog) {
@@ -32,7 +34,7 @@ $(document).ready(function () {
     //      animateNavbar();
   });
   $("#header a").on("click", function (e) {
-//    navigate(e, $.fn.fullpage);
+    //    navigate(e, $.fn.fullpage);
   })
 })
 
@@ -51,10 +53,10 @@ function animateNavbar() {
 function navigate(event, fP) {
   var location = $(event.currentTarget).attr("id")
     , nav = {
-      "logo": fP.silentMoveTo(2, 0)
-      , "aboutUs": fP.silentMoveTo(2, 1)
-      , "meetTheTeam": fP.silentMoveTo(2, 2)
-      , "contactUs": fP.silentMoveTo(2, 3)
+      "logo": fP.silentMoveTo(2)
+      , "aboutUs": fP.silentMoveTo(1)
+      , "meetTheTeam": fP.silentMoveTo(1)
+      , "contactUs": fP.silentMoveTo(1)
     }
   console.log("id : ", location);
   //  console.log("mmoving to...", nav[location]);
