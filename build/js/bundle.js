@@ -3,8 +3,14 @@ $(document).ready(function () {
   // instantiating full page js 
   // setting header and footer as static elements
   $('#fullpage').fullpage({
-    fixedElements: '#header, #footer'
-    , controlArrows: false, //events
+    fixedElements: '#header, #footer', // fixed
+    controlArrows: false, //events
+    //    onSlideLeave: function (anchorLink, index, slideIndex, direction, nextSlideIndex) {
+    //      console.log( "well fuck ", anchorLink)
+    //      if (deleteLog) {
+    //        placeHolder.html('');
+    //      }
+    //    }
     onLeave: callMe
       // onLead: function (index, nextIndex, direction) {}
       //    , afterLoad: function (anchorLink, index) {}
@@ -41,9 +47,11 @@ function animateNavbar() {
 
 function callMe(index, nextIndex, direction) {
   console.log("call me \n", index);
-  console.log("call me \n", nextIndex);
-  console.log("call me \n", direction);
-  if (direction === "down") {
+  //  console.log("call me \n", nextIndex);
+  console.log("call me \n", $(".section"));
+  // TODO 
+  // kinda works...
+  if ($("#landing.section").hasClass("active")) {
     $("#header .nav-item.element").animate({
         "color": "black"
       }, 1000)
@@ -52,7 +60,7 @@ function callMe(index, nextIndex, direction) {
       "opacity": 1
     }, 1000)
   }
-  else if (direction === "up") {
+  else {
     $("#header .nav-item.element").animate({
         "color": "white"
       }, 350)
@@ -62,6 +70,8 @@ function callMe(index, nextIndex, direction) {
     }, 350)
   }
 }
+
+function fun() {}
 /*! jQuery UI - v1.9.2 - 2014-03-21
 * http://jqueryui.com
 * Includes: jquery.ui.effect.js

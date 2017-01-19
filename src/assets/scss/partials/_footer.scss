@@ -1,9 +1,22 @@
 footer {
-  width: 100%; 
-  position: relative; 
-  bottom: $footer-height/2; 
-  height: $footer-height; 
+  width: 100%;
+  position: relative;
+  bottom: $footer-height/2;
+  height: $footer-height;
   background: white;
-  border: 1px solid #999; 
+  border: 1px solid #999;
   opacity: 0;
+  div {
+    text-align: center;
+    padding: 0 30px;
+    &.pull-left {
+      text-align: left;
+    }
+    &.pull-right {
+      text-align: right;
+    }
+    p {
+      font-family: $font--reg;
+    }
+  }
 }

@@ -3093,3 +3093,12 @@ footer {
   background: white;
   border: 1px solid #999;
   opacity: 0; }
+  footer div {
+    text-align: center;
+    padding: 0 30px; }
+    footer div.pull-left {
+      text-align: left; }
+    footer div.pull-right {
+      text-align: right; }
+    footer div p {
+      font-family: "Avenir Next Regular"; }
