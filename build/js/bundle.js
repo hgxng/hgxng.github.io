@@ -45,22 +45,10 @@ function animateNavbar() {
   })
 }
 
-function callMe(index, nextIndex, direction) {
-  console.log("call me \n", index);
-  //  console.log("call me \n", nextIndex);
-  console.log("call me \n", $(".section"));
-  // TODO 
-  // kinda works...
-  if ($("#landing.section").hasClass("active")) {
-    $("#header .nav-item.element").animate({
-        "color": "black"
-      }, 1000)
-      // show the footer 
-    $("#footer").animate({
-      "opacity": 1
-    }, 1000)
-  }
-  else {
+function callMe(anchorLink, index, nextIndex, direction) {
+  // index for up or down scrolling to home page
+  if (index === 1 || index === 3) {
+    console.log("LANDING PAGE")
     $("#header .nav-item.element").animate({
         "color": "white"
       }, 350)
@@ -69,6 +57,19 @@ function callMe(index, nextIndex, direction) {
       "opacity": 0
     }, 350)
   }
+  else {
+    $("#header .nav-item.element").animate({
+        "color": "black"
+      }, 1000)
+      // show the footer 
+    $("#footer").animate({
+      "opacity": 1
+    }, 1000)
+  }
+  // TODO 
+  // kinda works...
+  //  if ($("#landing.section").hasClass("active")) {}
+  //  else {}/
 }
 
 function fun() {}
