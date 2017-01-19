@@ -3000,13 +3000,29 @@ html.fp-enabled,
 .fp-responsive .fp-auto-height-responsive .fp-tableCell {
   height: auto !important; }
 
+.contentContainer {
+  width: 100%;
+  position: relative;
+  height: 100%;
+  margin: 0;
+  padding-top: 132px; }
+  .contentContainer .content {
+    padding: 0 58px;
+    margin: 70px; }
+    .contentContainer .content h5 {
+      font-size: 22px;
+      font-family: "Avenir Next Demi"; }
+    .contentContainer .content p {
+      font-size: 19px;
+      font-family: "Avenir Next Regular"; }
+
 #landing {
   background-image: url("../img/banner-overlay.jpg");
   width: 100%;
   position: relative;
   background-repeat: no-repeat;
-  background-size: 110%;
-  background-position: center top;
+  background-size: 100%;
+  background-position: center -100px;
   /*Down pointing*/ }
   #landing:after {
     content: ' ';
@@ -3038,26 +3054,11 @@ html.fp-enabled,
     height: 30px;
     position: absolute;
     margin: 0 auto;
-    top: 90%;
+    top: 95%;
+    z-index: 5;
     left: 0;
     right: 0;
     text-align: center; }
-
-#welcome {
-  width: 100%;
-  position: relative;
-  height: 100%;
-  margin: 0;
-  padding-top: 132px; }
-  #welcome .content {
-    padding: 0 58px;
-    margin: 70px; }
-    #welcome .content h5 {
-      font-size: 22px;
-      font-family: "Avenir Next Demi"; }
-    #welcome .content p {
-      font-size: 19px;
-      font-family: "Avenir Next Regular"; }
 
 .navbar {
   height: 132px;
@@ -3079,7 +3080,8 @@ html.fp-enabled,
         font-size: 25px;
         position: relative; }
         .navbar .nav .row .nav-item.element:hover, .navbar .nav .row .nav-item.element:focus {
-          text-decoration: none; }
+          text-decoration: none;
+          color: red !important; }
       .navbar .nav .row #logo {
         margin-top: -12px; }
         .navbar .nav .row #logo img {
@@ -3092,7 +3094,9 @@ footer {
   height: 132px;
   background: white;
   border: 1px solid #999;
-  opacity: 0; }
+  opacity: 0;
+  display: none;
+  z-index: 2; }
   footer div {
     text-align: center;
     padding: 0 30px; }
