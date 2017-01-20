@@ -4,7 +4,7 @@
   width: 100%;
   position: relative;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 1432px;
   background-position: center -100px;
   &:after {
     content: ' ';
@@ -24,7 +24,7 @@
       height: 300px;
       h4 {
         color: white;
-        font-size: 42px;
+        font-size: 32px;
         font-family: $font--demi;
         letter-spacing: 2px;
       }
