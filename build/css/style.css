@@ -3015,6 +3015,9 @@ html.fp-enabled,
     .contentContainer .content p {
       font-size: 19px;
       font-family: "Avenir Next Regular"; }
+      .contentContainer .content p span {
+        color: red;
+        margin-right: 10px; }
 
 #landing {
   background-image: url("../img/banner-overlay.jpg");
@@ -3041,9 +3044,9 @@ html.fp-enabled,
       height: 300px; }
       #landing #cta div h4 {
         color: white;
-        font-size: 36px;
+        font-size: 42px;
         font-family: "Avenir Next Demi";
-        letter-spacing: 1px; }
+        letter-spacing: 2px; }
   #landing #scrollButton {
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -3059,6 +3062,10 @@ html.fp-enabled,
     left: 0;
     right: 0;
     text-align: center; }
+
+#team #bios #carousel {
+  margin-bottom: 20px;
+  text-align: center; }
 
 .navbar {
   height: 132px;
@@ -3080,7 +3087,7 @@ html.fp-enabled,
         font-family: "Avenir Next Regular";
         color: white;
         transition: color 0.15s ease;
-        text-align: center;
+        text-align: right;
         font-size: 25px;
         position: relative; }
         .navbar .nav .row .nav-item.element:hover, .navbar .nav .row .nav-item.element:focus {
@@ -3104,12 +3111,20 @@ footer {
   padding-top: 25px;
   opacity: 0;
   display: none; }
+  footer .row #flag {
+    float: right; }
+    footer .row #flag p,
+    footer .row #flag img {
+      float: right; }
+    footer .row #flag p {
+      display: inline-block;
+      margin-right: 10px; }
+    footer .row #flag img {
+      width: 80px;
+      margin-top: -11px; }
   footer .row div {
     text-align: center;
     padding: 0 30px; }
-    footer .row div.pull-left {
-      text-align: left; }
-    footer .row div.pull-right {
-      text-align: right; }
     footer .row div p {
-      font-family: "Avenir Next Regular"; }
+      font-family: "Avenir Next Regular";
+      letter-spacing: 0.5px; }

@@ -10,17 +10,27 @@ footer {
   display: none;
   //  z-index: 2;
   .row {
+    #flag {
+      float: right;
+      p,
+      img {
+        float: right;
+      }
+      p {
+        display: inline-block;
+        margin-right: 10px;
+      }
+      img {
+        width: 80px;
+        margin-top: -11px;
+      }
+    }
     div {
       text-align: center;
       padding: 0 30px;
-      &.pull-left {
-        text-align: left;
-      }
-      &.pull-right {
-        text-align: right;
-      }
       p {
         font-family: $font--reg;
+        letter-spacing: 0.5px;
       }
     }
   }

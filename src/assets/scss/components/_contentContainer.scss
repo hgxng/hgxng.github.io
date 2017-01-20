@@ -15,6 +15,11 @@
     p {
       font-size: 19px;
       font-family: $font--reg;
+      
+      span {
+        color: red;
+        margin-right:10px;
+      }
     }
   }
 }
