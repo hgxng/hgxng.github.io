@@ -3097,9 +3097,9 @@ html.fp-enabled,
         transition: color 0.5s ease;
         color: red !important; }
       .navbar .nav .row #logo {
-        margin-top: -12px; }
+        margin-top: -7px; }
         .navbar .nav .row #logo img {
-          width: 370px; }
+          width: 280px; }
 
 footer {
   width: 100%;
