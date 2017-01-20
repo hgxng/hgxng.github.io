@@ -6,22 +6,10 @@ $(document).ready(function () {
     fixedElements: '#header, #footer', // fixed
     controlArrows: false, //events
     keyboardScrolling: true, // turn off keys
-    anchors: [ 'p0', 'p1', 'p2', 'p3', 'p4'], //
+    anchors: ['p0', 'p1', 'p2', 'p3', 'p4'], //
     menu: '#header', //
-    //    onSlideLeave: function (anchorLink, index, slideIndex, direction, nextSlideIndex) {
-    //      console.log( "well fuck ", anchorLink)
-    //      if (deleteLog) {
-    //        placeHolder.html('');
-    //      }
-    //    }
     onLeave: animatePartials, //
-    //    onSlideLeave: animateNavigation, // onLead: function (index, nextIndex, direction) {}
-    //    , afterLoad: function (anchorLink, index) {}
-    //    , afterRender: function () {}
-    //    , afterResize: function () {}
-    //    , afterResponsive: function (isResponsive) {}
-    //    , afterSlideLoad: function (anchorLink, index, slideAnchor, slideIndex) {}
-    //    , onSlideLeave: function (anchorLink, index, slideIndex, direction, nextSlideIndex) {}
+    afterLoad: animateNav, //
   });
   // --
   // 2. 
@@ -38,40 +26,67 @@ $(document).ready(function () {
   })
 })
 
-function scrollPage(_this) {
-  $('html, body').animate({
-    scrollTop: $($(_this).attr('href')).offset().top
-  }, 450, 'linear');
+function animateNav(anchorLink, index) {
+  console.log("after load")
+  var nav = {
+    "about": $("#aboutUs"), // 
+    "team": $("#meetTheTeam"), // 
+    "contact": $("#contactUs") //
+  }
+  $(".section").each(function () {
+    console.log("--- ACTIVE ----")
+    if ($(this).hasClass("active")) {
+      var location = $(this).attr("id");
+      console.log(nav[location]);
+      if (nav[location]) {
+        nav[location].addClass("active");
+      }
+    }
+  })
 }
 
 function animateNavbar() {
   $(".nav .element").css({
     color: "black"
   })
-}
-
-function navigate(event, fP) {
-  var location = $(event.currentTarget).attr("id")
-    , nav = {
-      "logo": fP.silentMoveTo(2)
-      , "aboutUs": fP.silentMoveTo(1)
-      , "meetTheTeam": fP.silentMoveTo(1)
-      , "contactUs": fP.silentMoveTo(1)
-    }
-  console.log("id : ", location);
-  //  console.log("mmoving to...", nav[location]);
-  // navigating to the appropriate location 
-  //  nav[location];
-  //  fP.moveTo( 0, 0)
+  $(".nav").css({
+    "background": "white"
+  })
 }
 
 function animatePartials(index, nextIndex, direction) {
   // index for up or down scrolling to home page
-  var leavingSection = $(this);
-  console.log(leavingSection);
-  console.log("SECTION : ", index)
-  console.log("DIRECTION : ", direction)
-  if (nextIndex === 1 || nextIndex === 3) {
+  var leavingSection = $(this).attr("id");
+  //  console.log(leavingSection.attr("id"));
+  //  console.log("SECTION : ", index)
+  //  console.log("DIRECTION : ", direction)
+  var landing = $("#landing")
+    // if you're not on the landing page anymore
+  if (leavingSection === "landing" && direction === "down") {
+    $("#header .nav-item.element").animate({
+      "color": "black"
+    }, 1000)
+    $("#header").animate({
+      "background-color": "white"
+    , }, 850)
+    $("#header").css({
+        "border-bottom": "1px solid #ddd"
+      , })
+      // show the footer 
+    $("#footer").css({
+      "display": "inline-block"
+    })
+    $("#footer").animate({
+      "opacity": 1
+    }, 1000)
+  }
+  else if (leavingSection === "home" && direction === "up") {
+    $("#header").animate({
+      "background-color": "transparent"
+    }, 250);
+    $("#header").css({
+      "border": "transparent"
+    , })
     $("#header .nav-item.element").animate({
         "color": "white"
       }, 350)
@@ -84,24 +99,6 @@ function animatePartials(index, nextIndex, direction) {
       })
     })
   }
-  else {
-    $("#header .nav-item.element").animate({
-        "color": "black"
-      }, 1000)
-      // show the footer 
-    $("#footer").css({
-      "display": "block"
-    })
-    $("#footer").animate({
-      "opacity": 1
-    }, 1000)
-  }
-}
-
-function animateNavigation(anchorLink, index, slideIndex, direction, nextSlideIndex) {
-  //  console.log("slides are moving ")
-  console.log("anchorlink : ", anchorLink)
-  console.log("index : ", index)
-  console.log("slideIndex : ", slideIndex)
-  console.log("nextSlideIndex : ", nextSlideIndex)
+  if (nextIndex === 1 || nextIndex === 3) {}
+  else {}
 }

@@ -3067,21 +3067,28 @@ html.fp-enabled,
   align-items: center;
   position: absolute;
   width: 100%;
-  top: 0; }
+  padding-bottom: 20px;
+  top: 0;
+  transition: border-color 0s ease-out 0.5s; }
   .navbar .nav {
     width: 100%; }
     .navbar .nav .row {
       margin: 0;
-      width: 100%; }
+      width: 100%;
+      transition: color 0.15s ease; }
       .navbar .nav .row .nav-item.element {
         font-family: "Avenir Next Regular";
         color: white;
+        transition: color 0.15s ease;
         text-align: center;
         font-size: 25px;
         position: relative; }
         .navbar .nav .row .nav-item.element:hover, .navbar .nav .row .nav-item.element:focus {
           text-decoration: none;
           color: red !important; }
+      .navbar .nav .row .nav-item.element.active {
+        transition: color 0.5s ease;
+        color: red !important; }
       .navbar .nav .row #logo {
         margin-top: -12px; }
         .navbar .nav .row #logo img {
@@ -3093,16 +3100,16 @@ footer {
   bottom: 66px;
   height: 132px;
   background: white;
-  border: 1px solid #999;
+  border: 1px solid #ddd;
+  padding-top: 25px;
   opacity: 0;
-  display: none;
-  z-index: 2; }
-  footer div {
+  display: none; }
+  footer .row div {
     text-align: center;
     padding: 0 30px; }
-    footer div.pull-left {
+    footer .row div.pull-left {
       text-align: left; }
-    footer div.pull-right {
+    footer .row div.pull-right {
       text-align: right; }
-    footer div p {
+    footer .row div p {
       font-family: "Avenir Next Regular"; }
