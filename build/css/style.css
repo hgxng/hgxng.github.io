@@ -3008,7 +3008,7 @@ html.fp-enabled,
   padding-top: 132px; }
   .contentContainer .content {
     padding: 0 58px;
-    margin: 70px; }
+    margin: 40px 80px; }
     .contentContainer .content h5 {
       font-size: 19px;
       font-family: "Avenir Next Demi"; }
@@ -3024,7 +3024,7 @@ html.fp-enabled,
   width: 100%;
   position: relative;
   background-repeat: no-repeat;
-  background-size: 1432px;
+  background-size: 1322px;
   background-position: center -100px;
   /*Down pointing*/ }
   #landing:after {
@@ -3035,8 +3035,7 @@ html.fp-enabled,
     top: 0;
     background-color: rgba(0, 0, 0, 0.5); }
   #landing #cta {
-    position: relative;
-    margin-top: -10%; }
+    position: relative; }
     #landing #cta div {
       padding-top: 80px;
       text-align: center;
@@ -3063,9 +3062,19 @@ html.fp-enabled,
     right: 0;
     text-align: center; }
 
+/* Large Devices, Wide Screens */
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1322px) {
+  #landing {
+    background-size: 1480px; }
+    #landing #scrollButton {
+      top: 96.5%; } }
+
 #team #bios #carousel {
   margin-bottom: 20px;
   text-align: center; }
+  #team #bios #carousel img {
+    height: 240px; }
 
 .navbar {
   height: 132px;

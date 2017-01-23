@@ -4,7 +4,7 @@
   width: 100%;
   position: relative;
   background-repeat: no-repeat;
-  background-size: 1432px;
+  background-size: 1322px;
   background-position: center -100px;
   &:after {
     content: ' ';
@@ -16,7 +16,6 @@
   }
   #cta {
     position: relative;
-    margin-top: -10%; 
     div {
       padding-top: 80px;
       text-align: center;
@@ -58,4 +57,19 @@
   //.navbar {
   //  position: relative;
   //}
+}
+
+
+/* Large Devices, Wide Screens */
+
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (min-width: 1322px) {
+  #landing {
+    background-size: 1480px;
+    #scrollButton {
+      top: 96.5%;
+    }
+  }
 }

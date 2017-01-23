@@ -7,7 +7,7 @@
   padding-top: $header-height;
   .content {
     padding: 0 58px;
-    margin: 70px;
+    margin: 40px 80px;
     h5 {
       font-size: 19px;
       font-family: $font--demi;
@@ -15,10 +15,9 @@
     p {
       font-size: 15px;
       font-family: $font--reg;
-      
       span {
         color: red;
-        margin-right:10px;
+        margin-right: 10px;
       }
     }
   }

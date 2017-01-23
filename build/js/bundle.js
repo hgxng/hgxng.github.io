@@ -10,13 +10,16 @@ $(document).ready(function () {
     menu: '#header', //
     onLeave: animatePartials, //
     afterLoad: animateNav, //
+    scrollingSpeed: 1250, //
+    easing: "easeInBounce", //
+    css3: true, //
+    easingcss3: 'ease',//
   });
   // --
   // 2. 
   // scroll to home page animation trigger
   $("#scrollButton").on('click', function (e) {
     e.preventDefault();
-    console.log("scrolling")
     $.fn.fullpage.moveSectionDown();
     //      scrollPage(this);
     //      animateNavbar();
@@ -27,17 +30,14 @@ $(document).ready(function () {
 })
 
 function animateNav(anchorLink, index) {
-  console.log("after load")
   var nav = {
     "about": $("#aboutUs"), // 
     "team": $("#meetTheTeam"), // 
     "contact": $("#contactUs") //
   }
   $(".section").each(function () {
-    console.log("--- ACTIVE ----")
     if ($(this).hasClass("active")) {
       var location = $(this).attr("id");
-      console.log(nav[location]);
       if (nav[location]) {
         nav[location].addClass("active");
       }
