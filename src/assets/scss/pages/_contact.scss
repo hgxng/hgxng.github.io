@@ -1,3 +1,30 @@
 #contact {
-  
+  .content {
+    padding: 0;
+    margin: 20px 40px;
+    .row {
+      #submit {
+        label {
+          font-family: $font--reg;
+        }
+        input {
+          border-radius: 0;
+          font-family: $font--ultraLight;
+        }
+        button {
+          width: 100%;
+          border-radius: 0;
+          font-family: $font--reg;
+          border: none;
+          color: white;
+          background: red;
+          padding: 10px 0;
+          opacity: 0.74;
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
 }

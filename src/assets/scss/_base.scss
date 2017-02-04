@@ -4,7 +4,9 @@
 
 a:not(.nav-item) {
   color: red !important;
+  opacity: 0.74;
   &:hover {
     text-decoration: none;
+    opacity: 1;
   }
 }

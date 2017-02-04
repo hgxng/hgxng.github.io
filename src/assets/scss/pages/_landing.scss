@@ -44,6 +44,15 @@
     left: 0;
     right: 0;
     text-align: center;
+    overflow: hidden;
+    
+    &:hover {
+      cursor: pointer;
+    }
+    img {
+      text-align: center;
+      width: 50%;
+    }
   }
   /*Down pointing*/
   //#header-overlay { 
