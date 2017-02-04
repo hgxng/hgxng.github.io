@@ -1,4 +1,10 @@
-
 .section.ignore {
   display: none !important;
+}
+
+a:not(.nav-item) {
+  color: red !important;
+  &:hover {
+    text-decoration: none;
+  }
 }

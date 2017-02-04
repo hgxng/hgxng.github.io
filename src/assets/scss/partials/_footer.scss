@@ -1,11 +1,11 @@
 footer {
   width: 100%;
   position: relative;
-  bottom: $footer-height/2;
+  bottom: $footer-height;
   height: $footer-height;
   background: white;
   border: 1px solid #ddd;
-  padding-top: 25px;
+  padding-top: 16px;
   opacity: 0;
   display: none;
   //  z-index: 2;
@@ -21,7 +21,7 @@ footer {
         margin-right: 10px;
       }
       img {
-        width: 80px;
+        width: 72px;
         margin-top: -11px;
       }
     }

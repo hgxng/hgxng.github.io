@@ -2726,6 +2726,11 @@ select[multiple].input-lg {
 .section.ignore {
   display: none !important; }
 
+a:not(.nav-item) {
+  color: red !important; }
+  a:not(.nav-item):hover {
+    text-decoration: none; }
+
 @font-face {
   font-family: 'Avenir Next UltraLight';
   src: url("../fonts/AvenirNext-UltraLight.ttf") format("truetype");
@@ -2770,6 +2775,9 @@ select[multiple].input-lg {
 
 .marg_top--40 {
   margin-top: 40px; }
+
+.marg_top--20 {
+  margin-top: 20px; }
 
 .marg_btm--40 {
   margin-bottom: 40px; }
@@ -3011,7 +3019,7 @@ html.fp-enabled,
   position: relative;
   height: 100%;
   margin: 0;
-  padding-top: 132px; }
+  padding-top: 80px; }
   .contentContainer .content {
     padding: 0 58px;
     margin: 40px 80px; }
@@ -3078,14 +3086,16 @@ html.fp-enabled,
     #landing #scrollButton {
       top: 96.5%; } }
 
-#team #bios #carousel {
-  margin-bottom: 20px;
-  text-align: center; }
-  #team #bios #carousel img {
-    height: 240px; }
+#team #bios .content {
+  padding: 0; }
+  #team #bios .content .row {
+    margin-bottom: 20px;
+    text-align: left; }
+    #team #bios .content .row img {
+      height: 170px; }
 
 .navbar {
-  height: 132px;
+  height: 80px;
   padding-top: 32px;
   display: flex;
   align-items: center;
@@ -3121,11 +3131,11 @@ html.fp-enabled,
 footer {
   width: 100%;
   position: relative;
-  bottom: 66px;
-  height: 132px;
+  bottom: 48px;
+  height: 48px;
   background: white;
   border: 1px solid #ddd;
-  padding-top: 25px;
+  padding-top: 16px;
   opacity: 0;
   display: none; }
   footer .row #flag {
@@ -3137,7 +3147,7 @@ footer {
       display: inline-block;
       margin-right: 10px; }
     footer .row #flag img {
-      width: 80px;
+      width: 72px;
       margin-top: -11px; }
   footer .row div {
     text-align: center;

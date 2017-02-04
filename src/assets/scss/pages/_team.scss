@@ -1,13 +1,14 @@
 #team {
-  
   #bios {
-    
-    #carousel {
-      margin-bottom: 20px;
-      text-align: center;
-      
-      img {
-        height: 240px;
+    .content {
+      padding: 0;
+//      margin: 40px 40px;
+      .row {
+        margin-bottom: 20px;
+        text-align: left;
+        img {
+          height: 170px;
+        }
       }
     }
   }
