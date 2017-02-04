@@ -20,5 +20,13 @@
         margin-right: 10px;
       }
     }
+    
+    .row {
+      .col-sm-4 {
+        .subheader {
+          font-family: $font--med; 
+        }
+      }
+    }
   }
 }

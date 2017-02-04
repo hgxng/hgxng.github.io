@@ -2768,6 +2768,12 @@ select[multiple].input-lg {
 .marg--0 {
   margin: 0; }
 
+.marg_top--40 {
+  margin-top: 40px; }
+
+.marg_btm--40 {
+  margin-bottom: 40px; }
+
 /*!
  * fullPage 2.9.2
  * https://github.com/alvarotrigo/fullPage.js
@@ -3018,6 +3024,8 @@ html.fp-enabled,
       .contentContainer .content p span {
         color: red;
         margin-right: 10px; }
+    .contentContainer .content .row .col-sm-4 .subheader {
+      font-family: "Avenir Next Medium"; }
 
 #landing {
   background-image: url("../img/banner-overlay.jpg");
