@@ -2726,6 +2726,13 @@ select[multiple].input-lg {
 .section.ignore {
   display: none !important; }
 
+a:not(.nav-item) {
+  color: red !important;
+  opacity: 0.74; }
+  a:not(.nav-item):hover {
+    text-decoration: none;
+    opacity: 1; }
+
 @font-face {
   font-family: 'Avenir Next UltraLight';
   src: url("../fonts/AvenirNext-UltraLight.ttf") format("truetype");
@@ -2767,6 +2774,15 @@ select[multiple].input-lg {
 
 .marg--0 {
   margin: 0; }
+
+.marg_top--40 {
+  margin-top: 40px; }
+
+.marg_top--20 {
+  margin-top: 20px; }
+
+.marg_btm--40 {
+  margin-bottom: 40px; }
 
 /*!
  * fullPage 2.9.2
@@ -3005,7 +3021,7 @@ html.fp-enabled,
   position: relative;
   height: 100%;
   margin: 0;
-  padding-top: 132px; }
+  padding-top: 80px; }
   .contentContainer .content {
     padding: 0 58px;
     margin: 40px 80px; }
@@ -3018,15 +3034,16 @@ html.fp-enabled,
       .contentContainer .content p span {
         color: red;
         margin-right: 10px; }
+    .contentContainer .content .row .col-sm-4 .subheader {
+      font-family: "Avenir Next Medium"; }
 
 #landing {
   background-image: url("../img/banner-overlay.jpg");
   width: 100%;
   position: relative;
   background-repeat: no-repeat;
-  background-size: 1322px;
-  background-position: center -100px;
-  /*Down pointing*/ }
+  background-size: 1860px;
+  background-position: center -100px; }
   #landing:after {
     content: ' ';
     position: absolute;
@@ -3060,24 +3077,66 @@ html.fp-enabled,
     z-index: 5;
     left: 0;
     right: 0;
-    text-align: center; }
+    text-align: center;
+    overflow: hidden; }
+    #landing #scrollButton:hover {
+      cursor: pointer; }
+    #landing #scrollButton img {
+      text-align: center;
+      width: 50%; }
 
-/* Large Devices, Wide Screens */
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  #landing #cta div h4 {
+    font-size: 22px;
+    line-height: 50px; }
+  #landing #cta div {
+    padding-top: 70px; } }
+
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1322px) {
   #landing {
-    background-size: 1480px; }
+    background-size: 2000px; }
     #landing #scrollButton {
       top: 96.5%; } }
 
-#team #bios #carousel {
-  margin-bottom: 20px;
-  text-align: center; }
-  #team #bios #carousel img {
-    height: 240px; }
+#team #bios .content {
+  padding: 0;
+  margin: 20px 40px; }
+  #team #bios .content .row {
+    margin-bottom: 20px;
+    text-align: left; }
+    #team #bios .content .row p {
+      font-size: 13px; }
+    #team #bios .content .row img {
+      height: 170px; }
+    #team #bios .content .row .img {
+      width: 127.5px;
+      height: 170px;
+      background: grey; }
+
+#contact .content {
+  padding: 0;
+  margin: 20px 40px; }
+  #contact .content .row #submit label {
+    font-family: "Avenir Next Regular"; }
+  #contact .content .row #submit input {
+    border-radius: 0;
+    font-family: "Avenir Next UltraLight"; }
+  #contact .content .row #submit button {
+    width: 100%;
+    border-radius: 0;
+    font-family: "Avenir Next Regular";
+    border: none;
+    color: white;
+    background: red;
+    padding: 10px 0;
+    opacity: 0.74; }
+    #contact .content .row #submit button:hover {
+      opacity: 1; }
 
 .navbar {
-  height: 132px;
+  height: 80px;
   padding-top: 32px;
   display: flex;
   align-items: center;
@@ -3113,11 +3172,12 @@ html.fp-enabled,
 footer {
   width: 100%;
   position: relative;
-  bottom: 66px;
-  height: 132px;
+  bottom: 48px;
+  height: 48px;
   background: white;
+  font-size: 12px;
   border: 1px solid #ddd;
-  padding-top: 25px;
+  padding-top: 16px;
   opacity: 0;
   display: none; }
   footer .row #flag {
@@ -3129,7 +3189,7 @@ footer {
       display: inline-block;
       margin-right: 10px; }
     footer .row #flag img {
-      width: 80px;
+      width: 72px;
       margin-top: -11px; }
   footer .row div {
     text-align: center;
