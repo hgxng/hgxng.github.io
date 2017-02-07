@@ -4,7 +4,7 @@
   width: 100%;
   position: relative;
   background-repeat: no-repeat;
-  background-size: 1322px;
+  background-size: 1860px;
   background-position: center -100px;
   &:after {
     content: ' ';
@@ -45,7 +45,6 @@
     right: 0;
     text-align: center;
     overflow: hidden;
-    
     &:hover {
       cursor: pointer;
     }
@@ -54,29 +53,27 @@
       width: 50%;
     }
   }
-  /*Down pointing*/
-  //#header-overlay { 
-  //  width: 100%; 
-  //  height: 750px; 
-  //  position: absolute; 
-  //  left: 0; 
-  //  top: 0
-  //  background: rgba( 0, 0, 0, 0.4 )
-  //}
-  //.navbar {
-  //  position: relative;
-  //}
 }
 
 
-/* Large Devices, Wide Screens */
+/* Medium Devices, Desktops */
+
+@media only screen and (max-width: 992px) {
+  #landing #cta div h4 {
+    font-size: 22px;
+    line-height: 50px;
+  }
+  #landing #cta div {
+    padding-top: 70px
+  }
+}
 
 
 /* Large Devices, Wide Screens */
 
 @media only screen and (min-width: 1322px) {
   #landing {
-    background-size: 1480px;
+    background-size: 2000px;
     #scrollButton {
       top: 96.5%;
     }
