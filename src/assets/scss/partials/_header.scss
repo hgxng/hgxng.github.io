@@ -16,11 +16,13 @@
       transition: color 0.15s ease;
       .nav-item.element {
         font-family: $font--reg;
+        font-weight: 400;
         color: white;
         transition: color 0.15s ease;
         text-align: right;
         font-size: 22px;
         position: relative;
+        letter-spacing: 1px; 
         &:hover,
         &:focus {
           text-decoration: none;

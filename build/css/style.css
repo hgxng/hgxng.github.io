@@ -4,6 +4,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -2731,7 +2732,7 @@ a:not(.nav-item) {
   opacity: 0.74; }
   a:not(.nav-item):hover {
     text-decoration: none;
-    opacity: 1; }
+    opacity: 1 !important; }
 
 @font-face {
   font-family: 'Avenir Next UltraLight';
@@ -3027,15 +3028,19 @@ html.fp-enabled,
     margin: 40px 80px; }
     .contentContainer .content h5 {
       font-size: 19px;
-      font-family: "Avenir Next Demi"; }
+      font-family: "Montserrat";
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      font-weight: 700; }
     .contentContainer .content p {
       font-size: 15px;
-      font-family: "Avenir Next Regular"; }
+      font-family: "Montserrat";
+      opacity: 0.87; }
       .contentContainer .content p span {
         color: red;
         margin-right: 10px; }
     .contentContainer .content .row .col-sm-4 .subheader {
-      font-family: "Avenir Next Medium"; }
+      font-family: "Montserrat"; }
 
 #landing {
   background-image: url("../img/banner-overlay.jpg");
@@ -3061,12 +3066,12 @@ html.fp-enabled,
       #landing #cta div h4 {
         color: white;
         font-size: 32px;
-        font-family: "Avenir Next Demi";
+        font-family: "Montserrat";
         letter-spacing: 2px; }
   #landing #scrollButton {
     letter-spacing: 1px;
     text-transform: uppercase;
-    font-family: "Avenir Next Demi";
+    font-family: "Montserrat";
     font-size: 15px;
     color: red;
     width: 80px;
@@ -3119,14 +3124,15 @@ html.fp-enabled,
   padding: 0;
   margin: 20px 40px; }
   #contact .content .row #submit label {
-    font-family: "Avenir Next Regular"; }
+    font-family: "Montserrat";
+    opacity: 0.87; }
   #contact .content .row #submit input {
     border-radius: 0;
-    font-family: "Avenir Next UltraLight"; }
+    font-family: "Montserrat"; }
   #contact .content .row #submit button {
     width: 100%;
     border-radius: 0;
-    font-family: "Avenir Next Regular";
+    font-family: "Montserrat";
     border: none;
     color: white;
     background: red;
@@ -3152,12 +3158,14 @@ html.fp-enabled,
       width: 100%;
       transition: color 0.15s ease; }
       .navbar .nav .row .nav-item.element {
-        font-family: "Avenir Next Regular";
+        font-family: "Montserrat";
+        font-weight: 400;
         color: white;
         transition: color 0.15s ease;
         text-align: right;
         font-size: 22px;
-        position: relative; }
+        position: relative;
+        letter-spacing: 1px; }
         .navbar .nav .row .nav-item.element:hover, .navbar .nav .row .nav-item.element:focus {
           text-decoration: none;
           color: red !important; }
@@ -3187,7 +3195,8 @@ footer {
       float: right; }
     footer .row #flag p {
       display: inline-block;
-      margin-right: 10px; }
+      margin-right: 10px;
+      opacity: 0.87; }
     footer .row #flag img {
       width: 72px;
       margin-top: -11px; }
@@ -3195,5 +3204,6 @@ footer {
     text-align: center;
     padding: 0 30px; }
     footer .row div p {
-      font-family: "Avenir Next Regular";
-      letter-spacing: 0.5px; }
+      font-family: "Montserrat";
+      letter-spacing: 0.5px;
+      opacity: 0.87; }

@@ -11,10 +11,14 @@
     h5 {
       font-size: 19px;
       font-family: $font--demi;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      font-weight: 700;
     }
     p {
       font-size: 15px;
       font-family: $font--reg;
+      opacity: 0.87;
       span {
         color: red;
         margin-right: 10px;
