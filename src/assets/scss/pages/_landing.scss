@@ -1,0 +1,53 @@
+#header-image {
+  //  background-image: url("../img/banner-22.jpeg");
+  width: 100%;
+  height: 750px;
+  left: 0;
+  position: absolute;
+  background-repeat: no-repeat;
+  background: rgba( 0, 0, 0, 0.9);
+  background-size: 100%;
+}
+
+#cta {
+  position: relative;
+  div {
+    margin-top: 10%;
+    padding-top: 80px;
+    text-align: center;
+    border: 5px solid white;
+    height: 300px;
+    h4 {
+      color: white;
+      font-size: 36px;
+      font-family: $font--med;
+    }
+  }
+}
+
+#scrollButton {
+  background: red;
+  width: 80px;
+  height: 70px;
+  position: relative;
+  margin: 0 auto;
+  top: 300px;
+}
+
+/*Down pointing*/
+
+
+
+//#header-overlay { 
+//  width: 100%; 
+//  height: 750px; 
+//  position: absolute; 
+//  left: 0; 
+//  top: 0
+//  background: rgba( 0, 0, 0, 0.4 )
+//}
+//.navbar {
+//  position: relative;
+//}
+
+// -- fonts 
