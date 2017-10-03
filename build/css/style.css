@@ -4,7 +4,6 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -2724,15 +2723,15 @@ select[multiple].input-lg {
   .hidden-print {
     display: none !important; } }
 
-.section.ignore {
-  display: none !important; }
+#page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative; }
 
-a:not(.nav-item) {
-  color: red !important;
-  opacity: 0.74; }
-  a:not(.nav-item):hover {
-    text-decoration: none;
-    opacity: 1 !important; }
+.row {
+  margin: 0; }
 
 @font-face {
   font-family: 'Avenir Next UltraLight';
@@ -2776,434 +2775,119 @@ a:not(.nav-item) {
 .marg--0 {
   margin: 0; }
 
-.marg_top--40 {
-  margin-top: 40px; }
-
-.marg_top--20 {
-  margin-top: 20px; }
-
-.marg_btm--40 {
-  margin-bottom: 40px; }
-
-/*!
- * fullPage 2.9.2
- * https://github.com/alvarotrigo/fullPage.js
- * MIT licensed
- *
- * Copyright (C) 2013 alvarotrigo.com - A project by Alvaro Trigo
- */
-html.fp-enabled,
-.fp-enabled body {
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  /*Avoid flicker on slides transitions for mobile phones #336 */
-  -webkit-tap-highlight-color: transparent; }
-
-#superContainer {
-  height: 100%;
-  position: relative;
-  /* Touch detection for Windows 8 */
-  -ms-touch-action: none;
-  /* IE 11 on Windows Phone 8.1*/
-  touch-action: none; }
-
-.fp-section {
-  position: relative;
-  -webkit-box-sizing: border-box;
-  /* Safari<=5 Android<=3 */
-  -moz-box-sizing: border-box;
-  /* <=28 */
-  box-sizing: border-box; }
-
-.fp-slide {
-  float: left; }
-
-.fp-slide, .fp-slidesContainer {
-  height: 100%;
-  display: block; }
-
-.fp-slides {
-  z-index: 1;
-  height: 100%;
-  overflow: hidden;
-  position: relative;
-  -webkit-transition: all 0.3s ease-out;
-  /* Safari<=6 Android<=4.3 */
-  transition: all 0.3s ease-out; }
-
-.fp-section.fp-table, .fp-slide.fp-table {
-  display: table;
-  table-layout: fixed;
-  width: 100%; }
-
-.fp-tableCell {
-  display: table-cell;
-  vertical-align: middle;
-  width: 100%;
-  height: 100%; }
-
-.fp-slidesContainer {
-  float: left;
-  position: relative; }
-
-.fp-controlArrow {
-  -webkit-user-select: none;
-  /* webkit (safari, chrome) browsers */
-  -moz-user-select: none;
-  /* mozilla browsers */
-  -khtml-user-select: none;
-  /* webkit (konqueror) browsers */
-  -ms-user-select: none;
-  /* IE10+ */
-  position: absolute;
-  z-index: 4;
-  top: 50%;
-  cursor: pointer;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  margin-top: -38px;
-  -webkit-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0); }
-
-.fp-controlArrow.fp-prev {
-  left: 15px;
-  width: 0;
-  border-width: 38.5px 34px 38.5px 0;
-  border-color: transparent #fff transparent transparent; }
-
-.fp-controlArrow.fp-next {
-  right: 15px;
-  border-width: 38.5px 0 38.5px 34px;
-  border-color: transparent transparent transparent #fff; }
-
-.fp-scrollable {
-  overflow: hidden;
-  position: relative; }
-
-.fp-scroller {
-  overflow: hidden; }
-
-.iScrollIndicator {
-  border: 0 !important; }
-
-.fp-notransition {
-  -webkit-transition: none !important;
-  transition: none !important; }
-
-#fp-nav {
-  position: fixed;
-  z-index: 100;
-  margin-top: -32px;
-  top: 50%;
-  opacity: 1;
-  -webkit-transform: translate3d(0, 0, 0); }
-
-#fp-nav.right {
-  right: 17px; }
-
-#fp-nav.left {
-  left: 17px; }
-
-.fp-slidesNav {
-  position: absolute;
-  z-index: 4;
-  left: 50%;
-  opacity: 1;
-  -webkit-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0); }
-
-.fp-slidesNav.bottom {
-  bottom: 17px; }
-
-.fp-slidesNav.top {
-  top: 17px; }
-
-#fp-nav ul,
-.fp-slidesNav ul {
-  margin: 0;
-  padding: 0; }
-
-#fp-nav ul li,
-.fp-slidesNav ul li {
-  display: block;
-  width: 14px;
-  height: 13px;
-  margin: 7px;
-  position: relative; }
-
-.fp-slidesNav ul li {
-  display: inline-block; }
-
-#fp-nav ul li a,
-.fp-slidesNav ul li a {
-  display: block;
-  position: relative;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-  text-decoration: none; }
-
-#fp-nav ul li a.active span,
-.fp-slidesNav ul li a.active span,
-#fp-nav ul li:hover a.active span,
-.fp-slidesNav ul li:hover a.active span {
-  height: 12px;
-  width: 12px;
-  margin: -6px 0 0 -6px;
-  border-radius: 100%; }
-
-#fp-nav ul li a span,
-.fp-slidesNav ul li a span {
-  border-radius: 50%;
-  position: absolute;
-  z-index: 1;
-  height: 4px;
-  width: 4px;
-  border: 0;
-  background: #333;
-  left: 50%;
-  top: 50%;
-  margin: -2px 0 0 -2px;
-  -webkit-transition: all 0.1s ease-in-out;
-  -moz-transition: all 0.1s ease-in-out;
-  -o-transition: all 0.1s ease-in-out;
-  transition: all 0.1s ease-in-out; }
-
-#fp-nav ul li:hover a span,
-.fp-slidesNav ul li:hover a span {
-  width: 10px;
-  height: 10px;
-  margin: -5px 0px 0px -5px; }
-
-#fp-nav ul li .fp-tooltip {
-  position: absolute;
-  top: -2px;
-  color: #fff;
-  font-size: 14px;
-  font-family: arial, helvetica, sans-serif;
-  white-space: nowrap;
-  max-width: 220px;
-  overflow: hidden;
-  display: block;
-  opacity: 0;
-  width: 0;
-  cursor: pointer; }
-
-#fp-nav ul li:hover .fp-tooltip,
-#fp-nav.fp-show-active a.active + .fp-tooltip {
-  -webkit-transition: opacity 0.2s ease-in;
-  transition: opacity 0.2s ease-in;
-  width: auto;
-  opacity: 1; }
-
-#fp-nav ul li .fp-tooltip.right {
-  right: 20px; }
-
-#fp-nav ul li .fp-tooltip.left {
-  left: 20px; }
-
-.fp-auto-height.fp-section,
-.fp-auto-height .fp-slide,
-.fp-auto-height .fp-tableCell {
-  height: auto !important; }
-
-.fp-responsive .fp-auto-height-responsive.fp-section,
-.fp-responsive .fp-auto-height-responsive .fp-slide,
-.fp-responsive .fp-auto-height-responsive .fp-tableCell {
-  height: auto !important; }
-
-.contentContainer {
-  width: 100%;
-  position: relative;
-  height: 100%;
-  margin: 0;
-  padding-top: 80px; }
-  .contentContainer .content {
-    padding: 0 58px;
-    margin: 40px 80px; }
-    .contentContainer .content h5 {
-      font-size: 19px;
-      font-family: "Montserrat";
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      font-weight: 700; }
-    .contentContainer .content p {
-      font-size: 15px;
-      font-family: "Montserrat";
-      opacity: 0.87; }
-      .contentContainer .content p span {
-        color: red;
-        margin-right: 10px; }
-    .contentContainer .content .row .col-sm-4 .subheader {
-      font-family: "Montserrat"; }
-
 #landing {
-  background-image: url("../img/banner-overlay.jpg");
+  background-image: url("../img/banner.jpg");
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+#cta {
+  position: relative; }
+  #cta div {
+    text-align: center;
+    border: 5px solid white;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    #cta div h4 {
+      color: white;
+      font-size: 36px;
+      font-family: "Avenir Next Medium"; }
+
+/*Down pointing*/
+#welcome {
   width: 100%;
   position: relative;
-  background-repeat: no-repeat;
-  background-size: 1860px;
-  background-position: center -100px; }
-  #landing:after {
-    content: ' ';
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    background-color: rgba(0, 0, 0, 0.5); }
-  #landing #cta {
-    position: relative; }
-    #landing #cta div {
-      padding-top: 80px;
-      text-align: center;
-      border: 5px solid white;
-      height: 300px; }
-      #landing #cta div h4 {
-        color: white;
-        font-size: 32px;
-        font-family: "Montserrat";
-        letter-spacing: 2px; }
-  #landing #scrollButton {
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    font-family: "Montserrat";
-    font-size: 15px;
-    color: red;
-    width: 80px;
-    height: 30px;
-    position: absolute;
-    margin: 0 auto;
-    top: 95%;
-    z-index: 5;
-    left: 0;
-    right: 0;
-    text-align: center;
-    overflow: hidden; }
-    #landing #scrollButton:hover {
-      cursor: pointer; }
-    #landing #scrollButton img {
-      text-align: center;
-      width: 50%; }
+  height: 50em;
+  border: 1px solid green;
+  margin: 0;
+  margin-top: 40em; }
+  #welcome .content {
+    padding: 0 150px;
+    margin: 70px; }
+    #welcome .content h5 {
+      font-size: 22px;
+      font-family: "Avenir Next Demi"; }
+    #welcome .content p {
+      font-size: 19px;
+      font-family: "Avenir Next Regular"; }
 
-/* Medium Devices, Desktops */
-@media only screen and (max-width: 992px) {
-  #landing #cta div h4 {
-    font-size: 22px;
-    line-height: 50px; }
-  #landing #cta div {
-    padding-top: 70px; } }
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width: 1322px) {
-  #landing {
-    background-size: 2000px; }
-    #landing #scrollButton {
-      top: 96.5%; } }
-
-#team #bios .content {
-  padding: 0;
-  margin: 20px 40px; }
-  #team #bios .content .row {
-    margin-bottom: 20px;
-    text-align: left; }
-    #team #bios .content .row p {
-      font-size: 13px; }
-    #team #bios .content .row img {
-      height: 170px; }
-    #team #bios .content .row .img {
-      width: 127.5px;
-      height: 170px;
-      background: grey; }
-
-#contact .content {
-  padding: 0;
-  margin: 20px 40px; }
-  #contact .content .row #submit label {
-    font-family: "Montserrat";
-    opacity: 0.87; }
-  #contact .content .row #submit input {
-    border-radius: 0;
-    font-family: "Montserrat"; }
-  #contact .content .row #submit button {
-    width: 100%;
-    border-radius: 0;
-    font-family: "Montserrat";
-    border: none;
-    color: white;
-    background: red;
-    padding: 10px 0;
-    opacity: 0.74; }
-    #contact .content .row #submit button:hover {
-      opacity: 1; }
-
-.navbar {
-  height: 80px;
+.home .navbar {
+  height: 132px;
   padding-top: 32px;
   display: flex;
   align-items: center;
-  position: absolute;
-  width: 100%;
-  padding-bottom: 20px;
-  top: 0;
-  transition: border-color 0s ease-out 0.5s; }
-  .navbar .nav {
+  position: fixed;
+  width: 100%; }
+  .home .navbar .nav {
     width: 100%; }
-    .navbar .nav .row {
+    .home .navbar .nav .row {
       margin: 0;
-      width: 100%;
-      transition: color 0.15s ease; }
-      .navbar .nav .row .nav-item.element {
-        font-family: "Montserrat";
-        font-weight: 400;
+      width: 100%; }
+      .home .navbar .nav .row .nav-item.element {
+        font-family: "Avenir Next Regular";
         color: white;
-        transition: color 0.15s ease;
-        text-align: right;
-        font-size: 22px;
-        position: relative;
-        letter-spacing: 1px; }
-        .navbar .nav .row .nav-item.element:hover, .navbar .nav .row .nav-item.element:focus {
-          text-decoration: none;
-          color: red !important; }
-      .navbar .nav .row .nav-item.element.active {
-        transition: color 0.5s ease;
-        color: red !important; }
-      .navbar .nav .row #logo {
+        text-align: center;
+        font-size: 25px;
+        position: relative; }
+        .home .navbar .nav .row .nav-item.element:hover {
+          text-decoration: none; }
+      .home .navbar .nav .row #logo {
         margin-top: -12px; }
-        .navbar .nav .row #logo img {
+        .home .navbar .nav .row #logo img {
           width: 370px; }
 
 footer {
   width: 100%;
-  position: relative;
-  bottom: 48px;
-  height: 48px;
-  background: white;
   font-size: 12px;
+  padding: 16px 0;
+  position: fixed;
+  bottom: 0; }
+
+.home footer {
+  background: transparent;
+  color: white; }
+
+.home footer .row a {
+  color: white;
+  text-decoration: none; }
+
+.other footer {
+  background: white;
   border: 1px solid #ddd;
-  padding-top: 16px;
-  opacity: 0;
-  display: none; }
-  footer .row #flag {
-    float: right; }
-    footer .row #flag p,
-    footer .row #flag img {
-      float: right; }
-    footer .row #flag p {
-      display: inline-block;
-      margin-right: 10px;
-      opacity: 0.87; }
-    footer .row #flag img {
-      width: 72px;
-      margin-top: -11px; }
-  footer .row div {
-    text-align: center;
-    padding: 0 30px; }
-    footer .row div p {
-      font-family: "Montserrat";
-      letter-spacing: 0.5px;
-      opacity: 0.87; }
+  color: #999; }
+
+footer .col-sm-3 {
+  text-align: center; }
+
+footer .row #flag {
+  float: right; }
+
+footer .row #flag p,
+footer .row #flag img {
+  float: right; }
+
+footer .row #flag p {
+  display: inline-block;
+  margin-right: 10px;
+  opacity: 0.87; }
+
+footer .row #flag img {
+  width: 72px;
+  margin-top: -11px; }
+
+footer .row div {
+  text-align: center;
+  padding: 0 30px; }
+
+footer .row div p {
+  font-family: "Montserrat";
+  letter-spacing: 0.5px;
+  opacity: 0.87; }

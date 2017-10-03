@@ -1,15 +1,15 @@
-.navbar {
+.home .navbar {
   height: 132px;
   padding-top: 32px;
   display: flex;
   align-items: center;
   position: fixed;
-  width: 100%; 
+  width: 100%;
   .nav {
     width: 100%;
     .row {
-      margin: 0; 
-      width: 100%; 
+      margin: 0;
+      width: 100%;
       .nav-item.element {
         font-family: $font--reg;
         color: white;
