@@ -1,5 +1,5 @@
 /*
-	#
+#
 */
 var gulp = require("gulp");
 var concat = require("gulp-concat");
@@ -10,12 +10,12 @@ var bsync = require("browser-sync");
 var express = require('express');
 var app = express();
 /*
-	# Define main gulp tasks
+# Define main gulp tasks
 */
 gulp.task("default", ["copy", "js", "sass", "server"]);
 gulp.task("build", ["copy", "js", "sass"]);
 /*
-    ## Copy over files
+## Copy over files
 */
 gulp.task("copy", function () {
   // Copy over stuff
@@ -30,7 +30,7 @@ gulp.task("copy", function () {
   return merged;
 });
 /*
-    ## Bundle the JS
+## Bundle the JS
 */
 gulp.task('js', function () {
   // Compile
@@ -38,16 +38,16 @@ gulp.task('js', function () {
 });
 gulp.task('js-watch', ['copy', 'js'], bsync.reload);
 /*
-    ## Compile the SASS into a single CSS file
+## Compile the SASS into a single CSS file
 */
 gulp.task('sass', function () {
   // Compile
   return gulp.src('src/assets/scss/index.scss').pipe(sass().on('error', sass.logError))
-    // .pipe( autoprefixer() )
-    .pipe(rename('style.css')).pipe(gulp.dest('build/css/')).pipe(bsync.stream());
+  // .pipe( autoprefixer() )
+  .pipe(rename('style.css')).pipe(gulp.dest('build/css/')).pipe(bsync.stream());
 });
 /*
-    ## Compile the SASS into a single CSS file
+## Compile the SASS into a single CSS file
 */
 gulp.task('html', function () {
   // Compile
@@ -56,23 +56,25 @@ gulp.task('html', function () {
 });
 gulp.task('html-watch', ['copy', 'html'], bsync.reload);
 /*
-    ## Development web server and file watcher
+## Development web server and file watcher
 */
 gulp.task("server", function () {
-  bsync.init({
-    server: './build'
-    , open: false
+  bsync.init(null, {
+    server: './build',
+    open: false,
+    // proxy: 'localhost:8080', // 'dev.site.com' in your example
+    // port: 5000
   });
   // Watch files
   gulp.watch('src/*.js', ['js-watch']);
   gulp.watch('src/**/*.js', ['js-watch']);
   gulp.watch('src/assets/scss/**/*.scss', ['sass']);
   gulp.watch(['src/assets/js/**/*.js', 'src/assets/js/**/*.json'], ["js-watch"])
-    //  gulp.watch('src/*.html').on('change', bsync.reload);
+  //  gulp.watch('src/*.html').on('change', bsync.reload);
   gulp.watch('src/index.html', ['html-watch']);
 });
 /*
-    #
+#
 */
 //gulp.task("heroku", ["build"], function () {
 //    // set the port of our application

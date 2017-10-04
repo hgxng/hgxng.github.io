@@ -2842,7 +2842,7 @@ select[multiple].input-lg {
       .home .navbar .nav .row #logo {
         margin-top: -12px; }
         .home .navbar .nav .row #logo img {
-          width: 370px; }
+          width: 100%; }
 
 footer {
   width: 100%;
