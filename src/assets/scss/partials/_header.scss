@@ -1,4 +1,4 @@
-.home .navbar {
+.splitScreen .navbar {
   height: 132px;
   padding-top: 32px;
   display: flex;
@@ -14,7 +14,41 @@
         font-family: $font--reg;
         color: white;
         text-align: center;
-        font-size: 25px;
+        font-size: 20px;
+        position: relative;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+      #logo {
+        margin-top: -12px;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+// tutoring pages only
+.tutoring .navbar {
+  height: 132px;
+  padding-top: 32px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  background: white;
+  width: 100%;
+  .nav {
+    width: 100%;
+    .row {
+      margin: 0;
+      width: 100%;
+      .nav-item.element {
+        font-family: "Montserrat";
+        color: black;
+        text-align: center;
+        font-size: 20px;
         position: relative;
         &:hover {
           text-decoration: none;

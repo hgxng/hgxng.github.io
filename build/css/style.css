@@ -2730,6 +2730,11 @@ select[multiple].input-lg {
   flex-direction: column;
   position: relative; }
 
+#page .content {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 .row {
   margin: 0; }
 
@@ -2819,29 +2824,55 @@ select[multiple].input-lg {
       font-size: 19px;
       font-family: "Avenir Next Regular"; }
 
-.home .navbar {
+.splitScreen .navbar {
   height: 132px;
   padding-top: 32px;
   display: flex;
   align-items: center;
   position: fixed;
   width: 100%; }
-  .home .navbar .nav {
+  .splitScreen .navbar .nav {
     width: 100%; }
-    .home .navbar .nav .row {
+    .splitScreen .navbar .nav .row {
       margin: 0;
       width: 100%; }
-      .home .navbar .nav .row .nav-item.element {
+      .splitScreen .navbar .nav .row .nav-item.element {
         font-family: "Avenir Next Regular";
         color: white;
         text-align: center;
-        font-size: 25px;
+        font-size: 20px;
         position: relative; }
-        .home .navbar .nav .row .nav-item.element:hover {
+        .splitScreen .navbar .nav .row .nav-item.element:hover {
           text-decoration: none; }
-      .home .navbar .nav .row #logo {
+      .splitScreen .navbar .nav .row #logo {
         margin-top: -12px; }
-        .home .navbar .nav .row #logo img {
+        .splitScreen .navbar .nav .row #logo img {
+          width: 100%; }
+
+.tutoring .navbar {
+  height: 132px;
+  padding-top: 32px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  background: white;
+  width: 100%; }
+  .tutoring .navbar .nav {
+    width: 100%; }
+    .tutoring .navbar .nav .row {
+      margin: 0;
+      width: 100%; }
+      .tutoring .navbar .nav .row .nav-item.element {
+        font-family: "Montserrat";
+        color: black;
+        text-align: center;
+        font-size: 20px;
+        position: relative; }
+        .tutoring .navbar .nav .row .nav-item.element:hover {
+          text-decoration: none; }
+      .tutoring .navbar .nav .row #logo {
+        margin-top: -12px; }
+        .tutoring .navbar .nav .row #logo img {
           width: 100%; }
 
 footer {
@@ -2855,11 +2886,11 @@ footer {
   background: transparent;
   color: white; }
 
-.home footer .row a {
-  color: white;
+.tutoring footer .row a {
+  color: #999;
   text-decoration: none; }
 
-.other footer {
+.tutoring footer {
   background: white;
   border: 1px solid #ddd;
   color: #999; }

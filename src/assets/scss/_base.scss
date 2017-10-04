@@ -6,6 +6,12 @@
   position: relative;
 }
 
+#page .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .row {
   margin: 0;
 }
