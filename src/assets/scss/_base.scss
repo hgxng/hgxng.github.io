@@ -1,4 +1,4 @@
-#page {
+.tutoring {
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -6,12 +6,11 @@
   position: relative;
 }
 
-#page .content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 .row {
   margin: 0;
+}
+
+.tutoring .contentWrapper {
+  margin-top: 132px;
 }
