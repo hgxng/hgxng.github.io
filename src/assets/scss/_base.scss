@@ -1,16 +1,41 @@
-.tutoring {
-  width: 100vw;
-  height: 100vh;
+html,
+body {
+  height: 100%;  
+}
+
+body {
   display: flex;
   flex-direction: column;
-  position: relative;
 }
 
-
-.row {
-  margin: 0;
+.pageWrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-.tutoring .contentWrapper {
-  margin-top: 132px;
+nav {
+  background: red;
+  order: 1;
+  flex-basis: 192px;
+  display: flex;
+  width: 100%;
+  z-index: 100;
+}
+
+.contentWrapper {
+  order: 2;
+  flex: 1;
+  flex-direction: column;
+  flex: 1;
+  overflow-y: auto;
+  justify-content: center;
+}
+
+footer {
+  background: blue;
+  order: 3;
+  flex-basis: 48px;
+  display: flex;
+  width: 100%;
 }
