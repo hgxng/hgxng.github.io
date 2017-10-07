@@ -2731,6 +2731,9 @@ body {
   display: flex;
   flex-direction: column; }
 
+.row {
+  margin: 0; }
+
 .pageWrapper {
   height: 100%;
   display: flex;
@@ -2740,7 +2743,6 @@ nav {
   background: white;
   order: 1;
   flex-basis: 100px;
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -2783,19 +2785,66 @@ nav {
   overflow-y: auto;
   justify-content: center; }
 
+.contentWrapper .content {
+  margin: 40px 80px; }
+
+.contentWrapper .content h5 {
+  font-size: 19px;
+  font-family: "Montserrat";
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 700; }
+
+.contentWrapper .content p {
+  font-size: 15px;
+  font-family: "Montserrat";
+  opacity: 0.87; }
+
+.contentWrapper .content p span {
+  color: red;
+  margin-right: 10px; }
+
+@media (max-width: 768px) {
+  .contentWrapper .content {
+    padding: 0;
+    margin: 30px; } }
+
 footer {
+  border-top: 1px solid #dddddd;
   background: white;
   order: 3;
-  flex-basis: 48px;
-  display: flex;
-  flex-direction: column;
+  flex-basis: 64px;
   width: 100%; }
+
+footer .row {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 footer .row div {
   text-align: center; }
 
-.row {
-  margin: 0; }
+footer .flag {
+  float: right; }
+
+footer .flag p {
+  display: inline-block;
+  margin-right: 10px;
+  opacity: 0.87; }
+
+footer .flag img {
+  width: 72px;
+  margin-top: -11px; }
+
+footer .center:nth-child(1) {
+  text-align: right; }
+
+footer .center:nth-child(2) {
+  text-align: left; }
+
+@media (max-width: 768px) {
+  footer .row {
+    display: block; } }
 
 @font-face {
   font-family: 'Avenir Next UltraLight';
