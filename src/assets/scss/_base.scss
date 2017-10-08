@@ -35,39 +35,62 @@ nav {
 
 
 // nav menu
-#menu {
+.menu {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  padding: 24px;
 }
 
-#menu a {
-  text-align: right;
+a {
+  color: black;
+  transition: color 0.5s ease;
+}
+
+.menu a:hover,
+a:hover {
+  text-decoration: none;
+  color: red;
+  transition: color 0.5s ease;
+}
+
+.menu a {
+  text-align: center;
   font-family: "Montserrat";
   font-weight: 400;
   font-size: 16px;
+  text-transform: uppercase;
   position: relative;
-  letter-spacing: 1px;
+  letter-spacing: 5px;
+  color: black;
 }
 
-#menu a img {
-  width: 130%;
+.menu .logo {
+  overflow: hidden;
 }
+
+.menu a img {
+  width: 100%;
+}
+
+@media (min-width: 769px) and (max-width: 1400px) {
+  .menu a {
+  }
+}
+
 
 // media query so that the nav turns into a full column on mobile
 @media (max-width: 768px) {
-  nav {
-    background: red;
-  }
-  #menu {
+  .menu {
     display: block;
   }
 
-  #menu a {
-    text-align: center;
+  .menu a {
+    margin: 10px 0;
+    font-size: 12px;
   }
 
-  #menu a img {
+  .menu a img {
     width: 50%;
   }
 }
@@ -118,7 +141,11 @@ footer {
   border-top: 1px solid rgb(221, 221, 221);
   background: white;
   order: 3;
-  flex-basis: 64px;
+  flex-basis: 84px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 14px 0;
   width: 100%;
 }
 
@@ -128,12 +155,30 @@ footer .row {
   align-items: center;
 }
 
-footer .row div {
+
+footer .row a {
+  margin: 0 0 10px;
+}
+
+
+footer .row div,
+footer .row a {
   text-align: center;
 }
 
+footer .row div p,
+footer .row a {
+  font-family: "Montserrat";
+  letter-spacing: 0.5px;
+  font-size: 10px;
+  text-transform: uppercase;;
+  opacity: 0.87;
+}
+
 footer .flag {
-  float: right;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 footer .flag p {
@@ -143,7 +188,7 @@ footer .flag p {
 }
 
 footer .flag img {
-  width: 72px;
+  width: 48px;
   margin-top: -11px;
 }
 
@@ -158,5 +203,15 @@ footer .center:nth-child(2) {
 @media (max-width: 768px) {
   footer .row {
     display: block;
+  }
+
+  footer .center:nth-child(1) {
+    text-align: center;
+  }
+  footer .center:nth-child(2) {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
