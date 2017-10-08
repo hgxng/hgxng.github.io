@@ -2824,6 +2824,39 @@ a:hover {
     padding: 0;
     margin: 30px; } }
 
+.team .row img {
+  height: 170px; }
+
+.team .row .img {
+  width: 127.5px;
+  height: 170px;
+  background: grey; }
+
+.contact #submit label {
+  font-family: "Montserrat";
+  opacity: 0.87; }
+
+.contact #submit input {
+  border-radius: 0;
+  font-family: "Montserrat"; }
+
+.contact #submit button {
+  width: 100%;
+  border-radius: 0;
+  font-family: "Montserrat";
+  border: none;
+  color: white;
+  background: red;
+  padding: 10px 0;
+  opacity: 0.74; }
+
+.contact #submit button:hover {
+  opacity: 1; }
+
+@media (max-width: 768px) {
+  .contact .space {
+    margin-top: 80px; } }
+
 footer {
   border-top: 1px solid #dddddd;
   background: white;
