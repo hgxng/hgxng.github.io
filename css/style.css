@@ -3021,7 +3021,7 @@ footer .center:nth-child(2) {
 NEED TO FIGURE OUT A BETTER WAY OF VERSIONING THIS CODE
 ALL OF THIS WILL GO INTO DEV BRANCH AT SOME POINT
 */
-footer,
+
 nav {
   position: fixed; }
 
@@ -3031,14 +3031,11 @@ nav {
   }
 
 .contentWrapper {
-  margin: 88px 0; }
-
-  .contentWrapper .content:last-child {
-    margin-bottom: 200px; }
+  margin-top: 88px; }
 
   @media (max-width: 768px) {
     nav {
-      height: 210px;
+      height: 180px;
       position: fixed; }
 
     .contentWrapper {
