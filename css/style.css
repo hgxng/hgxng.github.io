@@ -3025,11 +3025,6 @@ ALL OF THIS WILL GO INTO DEV BRANCH AT SOME POINT
 nav {
   position: fixed; }
 
-  footer {
-    bottom: 0;
-    z-index: 99;
-  }
-
 .contentWrapper {
   margin-top: 88px; }
 
