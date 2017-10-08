@@ -2751,7 +2751,7 @@ body {
   letter-spacing: 2.5px;
   font-weight: bold; }
 
-#offerings p {
+#offerings .contentWrapper p {
   font-size: 18px;
   opacity: 0.87; }
 
@@ -3015,3 +3015,32 @@ footer .center:nth-child(2) {
 
 .marg--0 {
   margin: 0; }
+
+/* extra custom code that you need to add to dev later */
+/* TODO
+NEED TO FIGURE OUT A BETTER WAY OF VERSIONING THIS CODE
+ALL OF THIS WILL GO INTO DEV BRANCH AT SOME POINT
+*/
+footer,
+nav {
+  position: fixed; }
+
+  footer {
+    bottom: 0;
+    z-index: 99;
+  }
+
+.contentWrapper {
+  margin: 88px 0; }
+
+  .contentWrapper .content:last-child {
+    margin-bottom: 200px; }
+
+  @media (max-width: 768px) {
+    nav {
+      height: 210px;
+      position: fixed; }
+
+    .contentWrapper {
+      margin: 216px 0; }
+  }
