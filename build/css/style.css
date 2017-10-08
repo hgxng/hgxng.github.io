@@ -2731,6 +2731,52 @@ body {
   display: flex;
   flex-direction: column; }
 
+#offerings {
+  text-align: center; }
+
+#offerings .contentWrapper {
+  justify-content: center; }
+
+#offerings .content {
+  margin: 0;
+  padding: 0 114px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+#offerings h1 {
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: bold; }
+
+#offerings p {
+  font-size: 18px;
+  opacity: 0.87; }
+
+#offerings .button:hover {
+  background: red;
+  transition: all 0.5s ease; }
+
+#offerings .button {
+  background: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 48px;
+  padding: 20px;
+  margin: 24px 0;
+  font-size: 16px;
+  font-family: "Montserrat";
+  transition: all 0.5s ease; }
+
+@media (max-width: 768px) {
+  #offerings .content {
+    padding: 0 24px; } }
+
 .row {
   margin: 0; }
 
@@ -2777,6 +2823,9 @@ a:hover {
   letter-spacing: 5px;
   color: black; }
 
+.menu a.active {
+  color: red; }
+
 .menu .logo {
   overflow: hidden; }
 
@@ -2793,12 +2842,10 @@ a:hover {
     width: 50%; } }
 
 .contentWrapper {
+  display: flex;
   order: 2;
   flex: 1;
-  flex-direction: column;
-  flex: 1;
-  overflow-y: auto;
-  justify-content: center; }
+  flex-direction: column; }
 
 .contentWrapper .content {
   margin: 40px 80px; }
@@ -2832,6 +2879,13 @@ a:hover {
   height: 170px;
   background: grey; }
 
+.subheader {
+  margin: 24px 0; }
+
+@media (max-width: 768px) {
+  .teammate {
+    margin-bottom: 54px; } }
+
 .contact #submit label {
   font-family: "Montserrat";
   opacity: 0.87; }
@@ -2854,7 +2908,7 @@ a:hover {
   opacity: 1; }
 
 @media (max-width: 768px) {
-  .contact .space {
+  .content .space {
     margin-top: 80px; } }
 
 footer {
