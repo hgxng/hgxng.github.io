@@ -3022,6 +3022,10 @@ NEED TO FIGURE OUT A BETTER WAY OF VERSIONING THIS CODE
 ALL OF THIS WILL GO INTO DEV BRANCH AT SOME POINT
 */
 
+footer {
+  z-index: 99;
+}
+
 nav {
   position: fixed; }
 
